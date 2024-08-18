@@ -1,3 +1,7 @@
 <div>
-  <app-funcionario-form (submitFuncionario)="createFuncionario($event)"></app-funcionario-form>
+  <app-funcionario-form 
+    (submitFuncionario)="createFuncionario($event)"
+    [btnAction]="'Cadastrar'"
+    [btnTitle]="'Cadastrar Funcionário'"
+  ></app-funcionario-form>
 </div>

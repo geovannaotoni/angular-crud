@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Funcionario } from 'src/app/models/Funcionarios';
 import { FuncionarioService } from 'src/app/services/funcionario.service';
 
@@ -10,7 +11,10 @@ import { FuncionarioService } from 'src/app/services/funcionario.service';
 })
 export class CriarFuncionariosComponent implements OnInit {
   
-  constructor(private funcionarioService: FuncionarioService) { }
+  btnAction = 'Cadastrar';
+  btnTitle = 'Cadastrar Funcionário';
+
+  constructor(private funcionarioService: FuncionarioService, private router: Router) { }
   
   ngOnInit(): void {
   
@@ -19,6 +23,7 @@ export class CriarFuncionariosComponent implements OnInit {
   createFuncionario(funcionario: Funcionario) {
     this.funcionarioService.addFuncionario(funcionario).subscribe(() => {
       // console.log('Funcionário criado com sucesso');
+      this.router.navigate(['/funcionarios']);
     });
   }
 }

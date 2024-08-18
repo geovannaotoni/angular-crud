@@ -1,0 +1,59 @@
+<form [formGroup]="funcionariosForm" (ngSubmit)="submit()" >
+  <div class="input-box">
+    <label for="nome">Nome</label>
+    <input
+      type="text"
+      name="nome"
+      id="nome"
+      placeholder="Digite o nome do funcionário"
+      formControlName="nome"
+      required
+      />
+  </div>
+
+  <div class="input-box">
+    <label for="sobrenome">Sobrenome</label>
+    <input
+      type="text"
+      name="sobrenome"
+      id="sobrenome"
+      placeholder="Digite o sobrenome do funcionário"
+      formControlName="sobrenome"
+      required
+      />
+  </div>
+
+  <div class="input-box">
+    <label for="departamento">Departamento</label>
+    <select
+      type="text"
+      id="departamento"
+      formControlName="departamento"
+      required
+    >
+      <option value="RH">RH</option>
+      <option value="Financeiro">Financeiro</option>
+      <option value="TI">TI</option>
+      <option value="Comercial">Comercial</option>
+    </select>
+  </div>
+
+  <div class="input-box">
+    <label for="turno">Turno</label>
+    <select
+      type="text"
+      id="turno"
+      formControlName="turno"
+      required
+    >
+      <option value="Manha">Manhã</option>
+      <option value="Tarde">Tarde</option>
+      <option value="Noite">Noite</option>
+    </select>
+  </div>
+
+  <div class="btn-box">
+    <button type="submit">Cadastrar</button>
+    <button type="button" routerLink="/funcionarios">Voltar</button>
+  </div>
+</form>

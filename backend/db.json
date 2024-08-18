@@ -19,6 +19,16 @@
       "turno": "tarde",
       "dataCriacao": "2021-08-01",
       "dataAtualizacao": "2021-08-01"
+    },
+    {
+      "id": 3,
+      "nome": "Jose",
+      "sobrenome": "Junior",
+      "departamento": "Financeiro",
+      "turno": "Tarde",
+      "ativo": true,
+      "dataCriacao": "2024-08-18T19:26:25.712Z",
+      "dataAtualizacao": "2024-08-18T19:26:25.712Z"
     }
   ]
 }

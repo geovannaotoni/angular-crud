@@ -29,7 +29,7 @@ export class ListarFuncionariosComponent implements OnInit {
       })
       this.funcionarios = data;
       this.funcionariosGeral = data;
-      console.log(data);
+      // console.log(data);
     });
   }
 

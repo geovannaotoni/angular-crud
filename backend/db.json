@@ -2,27 +2,23 @@
   "funcionarios": [
     {
       "id": 1,
-      "conteudo": "We are the champions my friends!!!",
-      "autoria": "Queen",
-      "modelo": "modelo1"
+      "nome": "João",
+      "sobrenome": "Silva",
+      "departamento": "TI",
+      "ativo": false,
+      "turno": "manhã",
+      "dataCriacao": "2021-08-01",
+      "dataAtualizacao": "2021-08-01"
     },
     {
       "id": 2,
-      "conteudo": "Na minha máquina funciona!",
-      "autoria": "Dev da madrugada",
-      "modelo": "modelo2"
-    },
-    {
-      "id": 3,
-      "conteudo": "Continue a codar... continue a codar...",
-      "autoria": "Dory programadora",
-      "modelo": "modelo3"
-    },
-    {
-      "conteudo": "Testando função de editar",
-      "autoria": "Angular ",
-      "modelo": "modelo2",
-      "id": 4
+      "nome": "Maria",
+      "sobrenome": "Santos",
+      "departamento": "RH",
+      "ativo": true,
+      "turno": "tarde",
+      "dataCriacao": "2021-08-01",
+      "dataAtualizacao": "2021-08-01"
     }
   ]
 }

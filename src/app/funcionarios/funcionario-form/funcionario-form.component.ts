@@ -12,20 +12,22 @@ export class FuncionarioFormComponent implements OnInit {
   @Output() submitFuncionario = new EventEmitter<Funcionario>();
   @Input() btnAction!: string;
   @Input() btnTitle!: string;
+  @Input() dadosFuncionario: Funcionario | null = null;
   
   constructor() { }
   
   ngOnInit(): void {
     this.funcionariosForm = new FormGroup({
-      id: new FormControl(0),
-      nome: new FormControl('', [Validators.required]),
-      sobrenome: new FormControl('', [Validators.required]),
-      departamento: new FormControl('', [Validators.required]),
-      turno: new FormControl('', [Validators.required]),
-      ativo: new FormControl(true),
+      id: new FormControl(this.dadosFuncionario ? this.dadosFuncionario.id : 0),
+      nome: new FormControl(this.dadosFuncionario?.nome || '', [Validators.required]),
+      sobrenome: new FormControl(this.dadosFuncionario?.sobrenome || '', [Validators.required]),
+      departamento: new FormControl(this.dadosFuncionario?.departamento || '', [Validators.required]),
+      turno: new FormControl(this.dadosFuncionario?.turno || '', [Validators.required]),
+      ativo: new FormControl(this.dadosFuncionario ? this.dadosFuncionario.ativo : true),
       dataCriacao: new FormControl(new Date()),
       dataAtualizacao: new FormControl(new Date()),
     });
+    // console.log(this.dadosFuncionario);
   }
   
   submit() {

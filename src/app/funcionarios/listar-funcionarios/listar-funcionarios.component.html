@@ -1,5 +1,5 @@
 <div class="funcionario-box">
-  <button type="button" routerLink="/cadastro">Cadastrar novo funcionário</button>
+  <button type="button" routerLink="/cadastrar">Cadastrar novo funcionário</button>
   <div class="input-box">
     <label for="search">Procurar:</label>
     <input
@@ -37,7 +37,7 @@
       <td>{{funcionario.sobrenome}}</td>
       <td>{{funcionario.departamento}}</td>
       <td>
-        <button>Editar</button>
+        <button type="button" routerLink="/editar/{{funcionario.id}}">Editar</button>
         <button>Detalhes</button>
       </td>
       <td>

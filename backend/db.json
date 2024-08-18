@@ -6,7 +6,7 @@
       "sobrenome": "Silva",
       "departamento": "TI",
       "ativo": false,
-      "turno": "manhã",
+      "turno": "Manha",
       "dataCriacao": "2021-08-01",
       "dataAtualizacao": "2021-08-01"
     },
@@ -16,7 +16,7 @@
       "sobrenome": "Santos",
       "departamento": "RH",
       "ativo": true,
-      "turno": "tarde",
+      "turno": "Tarde",
       "dataCriacao": "2021-08-01",
       "dataAtualizacao": "2021-08-01"
     },
@@ -37,8 +37,8 @@
       "departamento": "Comercial",
       "turno": "Tarde",
       "ativo": true,
-      "dataCriacao": "2024-08-18T19:31:35.788Z",
-      "dataAtualizacao": "2024-08-18T19:31:35.788Z"
+      "dataCriacao": "2024-08-18T20:48:39.970Z",
+      "dataAtualizacao": "2024-08-18T20:48:39.970Z"
     }
   ]
 }

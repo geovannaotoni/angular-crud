@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListarFuncionariosComponent } from './funcionarios/listar-funcionarios/listar-funcionarios.component';
+import { CriarFuncionariosComponent } from './funcionarios/criar-funcionarios/criar-funcionarios.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ListarFuncionariosComponent
+    ListarFuncionariosComponent,
+    CriarFuncionariosComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ import { CriarFuncionariosComponent } from './funcionarios/criar-funcionarios/cr
 import { FuncionarioFormComponent } from './funcionarios/funcionario-form/funcionario-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditarFuncionariosComponent } from './funcionarios/editar-funcionarios/editar-funcionarios.component';
+import { DetalharFuncionariosComponent } from './funcionarios/detalhar-funcionarios/detalhar-funcionarios.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EditarFuncionariosComponent } from './funcionarios/editar-funcionarios/
     ListarFuncionariosComponent,
     CriarFuncionariosComponent,
     FuncionarioFormComponent,
-    EditarFuncionariosComponent
+    EditarFuncionariosComponent,
+    DetalharFuncionariosComponent
   ],
   imports: [
     BrowserModule,

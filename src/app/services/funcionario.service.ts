@@ -30,4 +30,9 @@ export class FuncionarioService {
   deleteFuncionario(id: number): Observable<Funcionario> {
     return this.http.delete<Funcionario>(`${this.apiUrl}/${id}`);
   }
+
+  changeSituationFuncionario(funcionario: Funcionario): Observable<Funcionario> {
+    funcionario.ativo = !funcionario.ativo;
+    return this.http.put<Funcionario>(`${this.apiUrl}/${funcionario.id}`, funcionario);
+  }
 }

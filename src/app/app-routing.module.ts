@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListarFuncionariosComponent } from './funcionarios/listar-funcionarios/listar-funcionarios.component';
 import { CriarFuncionariosComponent } from './funcionarios/criar-funcionarios/criar-funcionarios.component';
 import { EditarFuncionariosComponent } from './funcionarios/editar-funcionarios/editar-funcionarios.component';
+import { DetalharFuncionariosComponent } from './funcionarios/detalhar-funcionarios/detalhar-funcionarios.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'editar/:id',
     component: EditarFuncionariosComponent
+  },
+  {
+    path: 'detalhar/:id',
+    component: DetalharFuncionariosComponent
   }
 ];
 

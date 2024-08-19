@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Funcionario } from 'src/app/models/Funcionarios';
 import { FuncionarioService } from 'src/app/services/funcionario.service';
+import { ExcluirFuncionarioComponent } from '../excluir-funcionario/excluir-funcionario.component';
 
 @Component({
   selector: 'app-listar-funcionarios',
@@ -8,12 +10,13 @@ import { FuncionarioService } from 'src/app/services/funcionario.service';
   styleUrls: ['./listar-funcionarios.component.css']
 })
 export class ListarFuncionariosComponent implements OnInit {
-
   funcionarios: Funcionario[] = []
   funcionariosGeral: Funcionario[] = []
+  columnsToDisplay = ['Situacao', 'Nome', 'Sobrenome', 'Departamento', 'Ações', 'Teste'];
 
   constructor(
-    private funcionarioService: FuncionarioService
+    private funcionarioService: FuncionarioService,
+    public matDialog: MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -38,4 +41,13 @@ export class ListarFuncionariosComponent implements OnInit {
     this.funcionarios = this.funcionariosGeral.filter(funcionario => funcionario.nome.toLowerCase().includes(value));
   }
 
+  openDialog(id : number){
+    this.matDialog.open(ExcluirFuncionarioComponent,{
+      width: '350px',
+      height: '350px',
+      data: {
+        id: id
+      }
+    })
+  }
 }

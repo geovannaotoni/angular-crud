@@ -1,47 +1,63 @@
-<div>
-  <h1>Detalhes Funcionários</h1>
-</div>
+<mat-card>
+  <div>
+    <h1>Detalhes Funcionários</h1>
+  </div>
 
-<div>
-  <form *ngIf="funcionario">
-    <div class="input-box">
-      <label for="nome">Nome</label>
-      <input type="text" name="nome" id="nome" [value]="funcionario.nome" disabled>
-    </div>
+  <div>
+    <form *ngIf="funcionario">
+      <div class="input-box">
+        <mat-form-field>
+          <mat-label for="nome">Nome</mat-label>
+          <input matInput type="text" name="nome" id="nome" [value]="funcionario.nome" disabled>
+        </mat-form-field>
+      </div>
 
-    <div class="input-box">
-      <label for="sobrenome">Sobrenome</label>
-      <input type="text" name="sobrenome" id="sobrenome" [value]="funcionario.sobrenome" disabled>
-    </div>
+      <div class="input-box">
+        <mat-form-field>
+          <mat-label for="sobrenome">Sobrenome</mat-label>
+          <input matInput type="text" name="sobrenome" id="sobrenome" [value]="funcionario.sobrenome" disabled>
+        </mat-form-field>
+      </div>
 
-    <div class="input-box">
-      <label for="departamento">Departamento</label>
-      <input type="text" name="departamento" id="departamento" [value]="funcionario.departamento" disabled>
-    </div>
+      <div class="input-box">
+        <mat-form-field>
+          <mat-label for="departamento">Departamento</mat-label>
+          <input matInput type="text" name="departamento" id="departamento" [value]="funcionario.departamento" disabled>
+        </mat-form-field>
+      </div>
 
-    <div class="input-box">
-      <label for="turno">Turno</label>
-      <input type="text" name="turno" id="turno" [value]="funcionario.turno" disabled>
-    </div>
+      <div class="input-box">
+        <mat-form-field>
+          <mat-label for="turno">Turno</mat-label>
+          <input matInput type="text" name="turno" id="turno" [value]="funcionario.turno" disabled>
+        </mat-form-field>
+      </div>
 
-    <div class="input-box">
-      <label for="situação">Situação</label>
-      <input type="text" name="situação" id="situação" [value]="funcionario.ativo ? 'Ativo' : 'Inativo'" disabled>
-    </div>
+      <div class="input-box">
+        <mat-form-field>
+          <mat-label for="situação">Situação</mat-label>
+          <input matInput type="text" name="situação" id="situação" [value]="funcionario.ativo ? 'Ativo' : 'Inativo'" disabled>
+        </mat-form-field>
+      </div>
 
-    <div class="input-box">
-      <label for="criacao">Data de Criação</label>
-      <input type="text" name="criacao" id="criacao" [value]="getDate(funcionario.dataCriacao!)" disabled>
-    </div>
+      <div class="input-box">
+        <mat-form-field>
+          <mat-label for="criacao">Data de Criação</mat-label>
+          <input matInput type="text" name="criacao" id="criacao" [value]="getDate(funcionario.dataCriacao!)" disabled>
+        </mat-form-field>
+      </div>
 
-    <div class="input-box">
-      <label for="atualizacao">Data de Atualização</label>
-      <input type="text" name="atualizacao" id="atualizacao" [value]="getDate(funcionario.dataAtualizacao!)" disabled>
-    </div>
+      <div class="input-box">
+        <mat-form-field>
+          <mat-label for="atualizacao">Data de Atualização</mat-label>
+          <input matInput type="text" name="atualizacao" id="atualizacao" [value]="getDate(funcionario.dataAtualizacao!)" disabled>
+        </mat-form-field>
+      </div>
 
-    <div class="btn-box">
-      <button type="button" (click)="mudarSituacaoFuncionario()">{{ funcionario.ativo ? 'Inativar Funcionário' : 'Ativar Funcionário' }}</button>
-      <button type="button" routerLink="/funcionarios">Voltar</button>
-    </div>
-  </form>
-</div>
+      <div class="btn-box">
+        <button type="button" (click)="mudarSituacaoFuncionario()" mat-raised-button color="warn">{{ funcionario.ativo ? 'Inativar Funcionário' : 'Ativar Funcionário' }}</button>
+        <button type="button" routerLink="/funcionarios" mat-raised-button>Voltar</button>
+      </div>
+    </form>
+  </div>
+</mat-card>

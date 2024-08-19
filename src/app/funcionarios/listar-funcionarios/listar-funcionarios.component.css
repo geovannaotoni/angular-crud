@@ -1,0 +1,9 @@
+table {
+  width: 100%;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.funcionario-box > button:first-child {
+  margin-bottom: 10px;
+}

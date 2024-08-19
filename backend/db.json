@@ -5,10 +5,10 @@
       "nome": "João",
       "sobrenome": "Silva",
       "departamento": "TI",
+      "turno": "Tarde",
       "ativo": false,
-      "turno": "Manha",
-      "dataCriacao": "2024-08-18T19:26:25.712Z",
-      "dataAtualizacao": "2024-08-18T19:26:25.712Z"
+      "dataCriacao": "2024-08-19T23:06:13.707Z",
+      "dataAtualizacao": "2024-08-19T23:06:13.707Z"
     },
     {
       "id": 2,
@@ -29,16 +29,6 @@
       "ativo": true,
       "dataCriacao": "2024-08-18T19:26:25.712Z",
       "dataAtualizacao": "2024-08-18T19:26:25.712Z"
-    },
-    {
-      "id": 4,
-      "nome": "Julia",
-      "sobrenome": "Souza",
-      "departamento": "Comercial",
-      "turno": "Tarde",
-      "ativo": true,
-      "dataCriacao": "2024-08-18T20:48:39.970Z",
-      "dataAtualizacao": "2024-08-18T20:48:39.970Z"
     }
   ]
 }

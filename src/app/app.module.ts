@@ -12,6 +12,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditarFuncionariosComponent } from './funcionarios/editar-funcionarios/editar-funcionarios.component';
 import { DetalharFuncionariosComponent } from './funcionarios/detalhar-funcionarios/detalhar-funcionarios.component';
 
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import { ExcluirFuncionarioComponent } from './funcionarios/excluir-funcionario/excluir-funcionario.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTableModule} from '@angular/material/table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,14 +29,22 @@ import { DetalharFuncionariosComponent } from './funcionarios/detalhar-funcionar
     CriarFuncionariosComponent,
     FuncionarioFormComponent,
     EditarFuncionariosComponent,
-    DetalharFuncionariosComponent
+    DetalharFuncionariosComponent,
+    ExcluirFuncionarioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDialogModule,
+    NoopAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

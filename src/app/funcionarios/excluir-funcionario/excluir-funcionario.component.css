@@ -1,8 +1,5 @@
 .btn-box {
   display: flex;
   gap: 8px;
-}
-
-.btn-box button {
-  width: 50%;
+  justify-content: center;
 }
